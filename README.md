@@ -1,3 +1,5 @@
 # modul-2
 
-Hallo nama aku oji, 
+105221012
+Ahmad Arroziqi
+Membuat web untuk blog belajar
