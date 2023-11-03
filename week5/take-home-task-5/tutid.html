@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  background-color: red;
+  width: 500px;/* 1:1 Aspect Ratio */
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  grid-template-areas: "nav nav nav" 
+  "aside main main" 
+  "footer footer footer";
+}
+
+nav, aside, main, footer{
+  <!-- width: 100px;
+  height: 100px; -->
+}
+nav{
+  background-color: blue;
+  grid-area: nav;
+}
+aside{
+  background-color: green;
+  grid-area: aside;
+}
+main{
+  background-color: blueviolet;
+  grid-area: main;
+}
+footer{
+  background-color: black;
+  grid-area: footer;
+}
+</style>
+</head>
+<body class="container">
+<nav>nav</nav>
+<aside>aside</aside>
+<main>main</main>
+<footer>footer</footer>
+
+</body>
+</html>

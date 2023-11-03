@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+span{
+  color: #13aaaa;
+}
+p{
+  color: rgb(117, 117, 117);
+  font-size: 0.8rem;
+}
+h2,h4{
+  margin: 0.6rem 0;
+}
+h4{
+  font-size: 1rem;
+}
+h2{
+  font-size: 1.5rem;
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+.btn{
+  padding: 0.8em 2.5em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body {
+  background-color: rgb(5, 28, 56);
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+*{
+  color: rgb(255, 255, 255);
+  font-family: 'Inter', sans-serif;
+}
+header, footer, .cover-latar, .content{
+  width: calc(100vw - 2rem);
+  margin: auto;
+}
+/* navigasi phone mode */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  font-size: 2rem;
+}
+header input:checked ~ nav {
+  left: 0;
+}
+header nav {
+  transition: all 0.4s ease;
+  height: calc(100% - 4rem);
+  padding: 1rem 1rem;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: -100vw;
+  background-color: rgb(5, 28, 56);
+  letter-spacing: 1.5px;
+  font-size: 4vw;
+}
+header nav ul li{
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+header .r-nav{
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+header .r-nav i:not(:last-child){
+  font-size: 1.5rem;
+}
+header .li-login{
+  margin-top: 2.5em;
+}
+header .btn-login{
+  background-color: #128383;
+  font-size: 1rem;
+  margin: auto;
+}
+nav ul li:hover a, nav ul li:hover{
+  color: #128383;
+}
+
+/* latar phone mode */
+main section .hero{
+  width: calc(100vw - 5rem);
+  display: block;
+  margin: 0 auto 0;
+}
+.cover-latar{
+  height: 100%;
+  padding: 3em 0 3em;
+}
+.latar{
+  width: calc(100vw - 4rem);
+}
+.latar h1{
+  font-size: 2rem;
+}
+.latar span{
+  color: #1AACAC;
+}
+.latar p{
+  margin: 1rem 0 2em;
+  font-size: 1rem;
+  font-family: monospace, sans-serif;
+}
+.latar button{
+  background-color: #1AACAC;
+  border: 1px solid #1AACAC;
+  margin-right: 1vw;
+  padding: 1em 1.5em;
+}
+.latar button:hover{
+  background-color: #128383;
+}
+.latar .join-btn {
+  background-color: transparent;
+}
+
+/* content */
+.cover-content {
+  padding: 3em 0 3em;
+  background-color: rgb(243, 253, 253);
+}
+.content div > h2, .content div > h4{
+  color: black;
+}
+.categories{
+  padding: 1.5em 0 1.5em;
+}
+.card, .artikel-1{
+  padding: 1em;
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  background-color: rgb(253, 255, 255);
+  box-shadow: 0 2.5px 6px rgba(0, 0, 0, 0.123);
+}
+.artikel-1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+.card i{
+  color: #128383;
+  font-size: 1.5rem;
+}
+
+footer{
+  grid-area: footer;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  body{
+    display: grid;
+    grid-template-areas: 'left nav right' 'left main right' 'left footer right';
+    grid-template-columns: auto 1200px auto;
+  }
+  nav{
+    grid-area: nav;
+  }
+  .left{
+    grid-area: left;
+    background-color: #1AACAC;
+  }
+  main{
+    grid-area: main;
+  }
+  .right{
+    background-color: #1AACAC;
+    grid-area: right;
+  }
+}
+
+
+
