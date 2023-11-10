@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+span{
+  color: #13aaaa;
+}
+p{
+  color: rgb(117, 117, 117);
+  font-size: 0.8rem;
+}
+h2,h4{
+  margin: 0.6rem 0;
+}
+h4{
+  font-size: 1rem;
+}
+h2{
+  font-size: 1.5rem;
+}
+ul{
+  list-style: none;
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+.btn{
+  padding: 0.8em 2.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #1AACAC;
+}
+.btn:hover{
+  background-color: #128383;
+}
+.cover{
+  padding: 3em 0 3em;
+}
+
+body {
+  background-color: rgb(5, 28, 56);
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+*{
+  color: rgb(255, 255, 255);
+  font-family: 'Inter', sans-serif;
+}
+header, footer, .cover-latar, .content, .subscribe, .cover-footer{
+  width: calc(100vw - 2rem);
+  margin: auto;
+}
+/* navigasi phone mode */
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.logo img{
+  width: 5rem;
+  height: fit-content;
+}
+.logo img:first-child{
+  width: 2rem;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  font-size: 2rem;
+}
+header input:checked ~ nav {
+  left: 0;
+}
+header nav {
+  transition: all 0.4s ease;
+  height: calc(100% - 4rem);
+  padding: 1rem 1rem;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: -100vw;
+  background-color: rgb(5, 28, 56);
+  letter-spacing: 1.5px;
+  font-size: 4vw;
+}
+header nav ul li{
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+header .r-nav{
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+header .r-nav i:not(:last-child){
+  font-size: 1.5rem;
+}
+header .li-login{
+  margin-top: 2.5em;
+}
+header .btn-login{
+  background-color: #128383;
+  font-size: 1rem;
+  margin: auto;
+}
+nav ul li:hover a, nav ul li:hover{
+  color: #128383;
+}
+
+/* latar phone mode */
+main section .hero{
+  width: calc(100vw - 7rem);
+  display: block;
+  margin: 3em auto 3em;
+}
+.cover-latar{
+  height: 100%;
+}
+.latar{
+  width: calc(100vw - 4rem);
+}
+.latar h1{
+  font-size: 2rem;
+}
+.latar span{
+  color: #1AACAC;
+}
+.latar p{
+  margin: 1rem 0 2em;
+  line-height: 1.5em;
+  color: rgb(218, 218, 218);
+}
+.latar button{
+  border: 1px solid #1AACAC;
+  margin-right: 1vw;
+  padding: 1em 1.5em;
+}
+.latar .join-btn {
+  background-color: transparent;
+}
+
+/* content */
+.cover-content {
+  background-color: rgb(243, 253, 253);
+}
+.content div > h2, .content div > h4{
+  color: black;
+}
+.categories{
+  padding: 1.5em 0 1.5em;
+}
+.card, .artikel-1{
+  padding: 1em;
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  background-color: rgb(253, 255, 255);
+  box-shadow: 0 2.5px 6px rgba(0, 0, 0, 0.123);
+}
+.artikel-1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+.card i{
+  color: #128383;
+  font-size: 1.5rem;
+}
+
+/* subscribe */
+.cover-subscribe{
+  background-color: #034e4e;
+}
+.subscribe button{
+  display: block;
+  margin: 2em auto 0;
+  border: none;
+  box-shadow: 0 2.5px 6px rgba(0, 0, 0, 0.123);
+}
+.subscribe p{
+  color: rgb(187, 194, 201);
+}
+
+/* footer */
+footer{
+  grid-area: footer;
+}
+.cover-footer{
+  padding-bottom: 1.5em;
+}
+.info p{
+  margin: 1.5em 0 2em;
+  width: calc(100vw - 10em);
+}
+footer p{
+  color: rgb(218, 218, 218);
+}
+.tutorNav p{
+  margin: 1em;
+}
+.tutorNav a:hover{
+  color: aliceblue;
+}
+
+
+.copyright{
+  text-align: center;
+  padding: 1em;
+}
+.copyright strong{
+  margin-left: 0.7em;
+}
+footer .contact{
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 0.3em 0 1em;
+}
+footer .contact i{
+  color: #13aaaa;
+}
+footer h4{
+  text-align: center;
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  body{
+    display: grid;
+    grid-template-areas: '. header .' '. main .' '. footer .';
+    grid-template-columns: auto 1200px auto;
+    overflow-x: scroll;
+  }
+  header{
+    grid-area: header;
+    border: 1px solid red;
+  }
+  main{
+    grid-area: main;
+    border: 1px solid red;
+  }
+  .cover {
+    background-color: rgb(5, 28, 56);
+    height: calc(100vh - 4rem);
+  }
+  .hero{
+    border: 1px solid red;
+    height: 30rem;
+    object-fit: cover;
+    position: absolute;
+    right: 1em;
+  }
+}
+
+
+

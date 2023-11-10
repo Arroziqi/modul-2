@@ -1,0 +1,6 @@
+@charset "UTF-8";
+@font-face { font-family:"Clear Sans Medium";font-variant:normal;font-style:normal;font-weight:500;src:url("#FontID0") format(svg)}
+.fil1 {fill:#37474F}
+.fil2 {fill:url(#id0)}
+.fil0 {fill:url(#id1)}
+.fnt0 {font-weight:500;font-size:7055.56px;font-family:'Clear Sans Medium'}
